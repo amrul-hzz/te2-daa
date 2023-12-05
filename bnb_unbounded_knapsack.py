@@ -59,7 +59,7 @@ class BnBUnboundedKnapsack:
                     )
     
             if i+2 <  len(self.N):
-                idx3 = self.N[i+3]
+                idx3 = self.N[i+2]
                 w3 = self.weights[idx3]
                 v3 = self.values[idx3]
 
