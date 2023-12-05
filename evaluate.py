@@ -41,7 +41,7 @@ def evaluate(data):
     gc.collect()
     bnb_mem_before = max(memory_usage())
     bnb_start_time = time.time_ns()
-    bnb_solution, _ = BnBUnboundedKnapsack(cap, weights, values).solve()
+    bnb_solution, bnb_cert = BnBUnboundedKnapsack(cap, weights, values).solve()
     bnb_end_time = time.time_ns()
     bnb_mem_after = max(memory_usage())
 
